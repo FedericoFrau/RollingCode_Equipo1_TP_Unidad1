@@ -2,6 +2,7 @@
   --titulos-color: #F26938;
   --color-logo-morado: #9C1FBF;
 }
+
 *{
     margin: 0;
     padding: 0;
@@ -30,6 +31,54 @@ body::-webkit-scrollbar-thumb:hover{
 body::-webkit-scrollbar-track {
     background-color: #333; /* Color de la pista del scroll */
 }
+
+/* Desde aquí el navbar */
+/* Desde aquí logo-dnone navbar */
+.navbar__dnoneLink img {
+  transition: transform 0.5s; /* Agregar transición para suavizar la rotación */
+}
+.navbar__dnoneLink:hover img {
+  transform: rotate(360deg); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
+}
+/* Hasta aquí logo-dnone navbar */
+.bn31 {
+  background-image: linear-gradient(to right, #F2CB05 0%, #F26938 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #F26938;
+  display: block;
+  height: 45px;
+  font-size: 1.4em;
+  padding: 4px;
+  position:relative;
+  text-decoration: none;
+  max-width: 7em;
+  min-width: 5.5em;
+  width: 30vw;
+  z-index: 2;
+}
+
+.bn31:hover {
+color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
+/* Hasta aquí el navbar */
+
+/* Desde aquí section 1 */
 .welcome{
     width: 100%;
     height: 100vh;
@@ -188,8 +237,10 @@ body::-webkit-scrollbar-track {
 .card:hover .card-body{
     right: 0;
 }
-.borderTitle{
+@media(min-width: 576px) {
+  .borderTitle {
     border-left: 4px solid #F26938;
+  }
 }
 .description{
     overflow: hidden; 
@@ -197,8 +248,15 @@ body::-webkit-scrollbar-track {
     -webkit-box-orient: vertical; 
     -webkit-line-clamp: 5;
 }
+/* Hasta aquí section 1 */
 
-/* desde aqui Footer */
+
+
+
+
+
+
+/* Desde aquí footer */
 .footer__logoImage {
   display: inline-block;
   margin: -55px;
@@ -211,7 +269,6 @@ body::-webkit-scrollbar-track {
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
 /* Desde aquí nav redes */
 .social {
   margin: 0;
@@ -344,49 +401,60 @@ body::-webkit-scrollbar-track {
 .social .social-item .social-link:hover {
   color: #ffffff;
 }
-
-/* Aqui navBar */
-.bn31 {
-  background-image: linear-gradient(to right, #F2CB05 0%, #F26938 100%);
-  border-radius: 40px;
-  box-sizing: border-box;
-  color: #F26938;
-  display: block;
-  height: 45px;
-  font-size: 1.4em;
-  padding: 4px;
-  position:relative;
-  text-decoration: none;
-  max-width: 7em;
-  min-width: 5.5em;
-  width: 30vw;
-  z-index: 2;
-}
-
-.bn31:hover {
-color: #fff;
-}
-
-.bn31 .bn31span {
-  align-items: center;
-  background: #0e0e10;
-  border-radius: 40px;
+/* Hasta aquí nav redes */
+/* Desde aquí boton Home */
+.Btn {
+  width: 60px;
+  height: 60px;
+  background: linear-gradient(#d1ffdf, #159b82);
   display: flex;
+  align-items: center;
   justify-content: center;
-  height: 100%;
-  transition: background 0.5s ease;
-  width: 100%;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+  border: none;
 }
 
-.bn31:hover .bn31span {
-  background: transparent;
+.arrow path {
+  fill: white;
 }
 
-/* Estilo para logo dnone */
-.navbar__dnoneLink img {
-  transition: transform 0.5s; /* Agregar transición para suavizar la rotación */
+.text {
+  font-size: 1em;
+  width: 100px;
+  position: absolute;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: -38px;
+  opacity: 0;
+  transition-duration: 0.7s;
 }
 
-.navbar__dnoneLink:hover img {
-  transform: rotate(360deg); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
+.Btn:hover .text {
+  opacity: 1;
+  transition-duration: 0.7s;
 }
+
+.Btn:hover .arrow {
+  animation: slide-in-bottom 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* Hasta aquí boton Home */
+.footer__link:hover {
+  color: rgb(32, 190, 238) !important;
+}
+/* Hasta aquí footer */
