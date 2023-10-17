@@ -1,0 +1,68 @@
+.navbar{
+    background-color: rgb(240, 230, 230);
+    color: white;
+}
+.border1{
+    border-radius: 100%;
+}
+.bn31 {
+  background-image: linear-gradient(to right, #F2CB05 0%, #F26938 100%);
+  border-radius: 40px;
+  box-sizing: border-box;
+  color: #F26938;
+  display: block;
+  height: 50px;
+  font-size: 1.4em;
+  padding: 4px;
+  position: relative;
+  text-decoration: none;
+  width: 10em;
+  z-index: 2;
+}
+.bn31:hover {
+  color: #fff;
+}
+
+.bn31 .bn31span {
+  align-items: center;
+  background: #0e0e10;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: background 0.5s ease;
+  width: 100%;
+}
+
+.bn31:hover .bn31span {
+  background: transparent;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Para evitar desbordamientos horizontales */
+}
+
+.contenedor {
+  width: 100%;
+  height: 100vh; /* Establece la altura al 100% de la ventana gráfica */
+  display: flex;
+  justify-content: center; /* Centra horizontalmente el contenido */
+  align-items: center; /* Centra verticalmente el contenido */
+  overflow: hidden; /* Para recortar la imagen si es necesario */
+}
+
+/* Estilo para la imagen */
+.contenedor img {
+  max-width: 100%; /* La imagen se ajustará al ancho de su contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+.navbar-brand img {
+  transition: transform 0.5s; /* Agregar transición para suavizar la rotación */
+}
+
+.navbar-brand:hover img {
+  transform: rotate(360deg); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
+}
