@@ -1,28 +1,22 @@
-* {
-  padding: 0;
-  margin: 0;
-}
 /* Desde aquí el navbar */
 /* Desde aquí logo-dnone navbar */
 .navbar__dnoneLink img {
   transition: transform 0.5s; /* Agregar transición para suavizar la rotación */
 }
 .navbar__dnoneLink:hover img {
-  transform: rotate(
-    360deg
-  ); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
+  transform: rotate(360deg); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
 }
 /* Hasta aquí logo-dnone navbar */
 .bn31 {
-  background-image: linear-gradient(to right, #f2cb05 0%, #f26938 100%);
+  background-image: linear-gradient(to right, #F2CB05 0%, #F26938 100%);
   border-radius: 40px;
   box-sizing: border-box;
-  color: #f26938;
+  color: #F26938;
   display: block;
   height: 45px;
   font-size: 1.4em;
   padding: 4px;
-  position: relative;
+  position:relative;
   text-decoration: none;
   max-width: 7em;
   min-width: 5.5em;
@@ -31,7 +25,7 @@
 }
 
 .bn31:hover {
-  color: #fff;
+color: #fff;
 }
 
 .bn31 .bn31span {
@@ -49,74 +43,27 @@
   background: transparent;
 }
 /* Hasta aquí el navbar */
-
-/* Desde aquí main page404 */
-/* Desde aquí globo de texto */
-.bubble {
-  position: absolute;
-  right: 16vw;
-  top: 0vw;
-  width: 32%;
-  height: 7vw;
-  background: rgb(236, 238, 214);
-  border-radius: 45%;
-  border: 0.5vw double #f7f7f7;
-  font-family: sans-serif;
-  font-size: 1.8vw;
-  text-wrap: balance;
+/* Desde aquí section login */
+.card11{
+    transition: transform 0.2s ease-in-out;
 }
-
-.textMessage {
-  position: relative;
-  margin-bottom: 0;
-  top: 15%;
-  font-family: walter Turncoat;
-  line-height: 2vw;
+.card11:hover{
+    transform: scale(1.07);
+}input:required:valid {
+    border: 2px solid lightgreen
 }
-.textError {
-  position: relative;
-  top: 30%;
-  left: 8%;
-  font-family: Rock Salt;
+input:invalid {
+    border: 2px solid lightcoral
 }
-
-.textMessageOut {
-  font-size: 2.5vw;
-  font-family: walter Turncoat;
-  text-shadow: 2px -2px 3px rgb(199, 153, 153);
-  margin-top: -1.5vw;
-  line-height: 3vw;
+input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+    background-size: 25px;
 }
-
-.errorCode {
-  font-size: 2.3vw;
+input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
 }
-
-.textLinkHome {
-  color: rgb(0, 87, 168);
-}
-@media (max-width: 768px) {
-  .bubble {
-    font-size: 3vw;
-    right: 1vw;
-    top: 0vw;
-    width: 47%;
-    height: 12vw;
-  }
-  .textMessage {
-    font-size: 3.5vw;
-    line-height: 3vw;
-  }
-  .errorCode {
-    font-size: 4.1vw;
-  }
-  .textMessageOut {
-    font-size: 5vw;
-  }
-}
-/* Hasta aquí globo de texto */
-/* Hasta aquí main page404 */
-
+/* Hasta aquí section login */
 /* Desde aquí footer */
 .footer__logoImage {
   display: inline-block;
