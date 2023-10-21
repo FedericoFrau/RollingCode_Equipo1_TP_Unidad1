@@ -1,0 +1,67 @@
+.navbar  {
+    background:#F2CB05;
+}
+.card11{
+    transition: transform 0.2s ease-in-out;
+
+}
+.card11:hover{
+    transform: scale(1.07);
+}input:required:valid {
+    border: 2px solid lightgreen
+}
+input:invalid {
+    border: 2px solid lightcoral
+}
+input:required:focus:valid {
+    background: url("https://assets.digitalocean.com/labs/icons/hand-thumbs-up.svg") no-repeat 95% 50% lightgreen;
+    background-size: 25px;
+}
+input:focus:invalid {
+    background: url("https://assets.digitalocean.com/labs/icons/exclamation-triangle-fill.svg") no-repeat 95% 50% lightsalmon;
+    background-size: 25px;
+}
+/* Desde aquí el navbar */
+/* Desde aquí logo-dnone navbar */
+.navbar__dnoneLink img {
+    transition: transform 0.5s; /* Agregar transición para suavizar la rotación */
+  }
+  .navbar__dnoneLink:hover img {
+    transform: rotate(360deg); /* Rotar la imagen 360 grados al pasar el cursor sobre ella */
+  }
+  /* Hasta aquí logo-dnone navbar */
+  .bn31 {
+    background-image: linear-gradient(to right, #F2CB05 0%, #F26938 100%);
+    border-radius: 40px;
+    box-sizing: border-box;
+    color: #F26938;
+    display: block;
+    height: 45px;
+    font-size: 1.4em;
+    padding: 4px;
+    position:relative;
+    text-decoration: none;
+    max-width: 7em;
+    min-width: 5.5em;
+    width: 30vw;
+    z-index: 2;
+  }
+  
+  .bn31:hover {
+  color: #fff;
+  }
+  
+  .bn31 .bn31span {
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 40px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+  
+  .bn31:hover .bn31span {
+    background: transparent;
+  }

@@ -17,6 +17,7 @@
       type="image/png"
       sizes=""
       href="/assets/favicon/favicon-96x96.png" />
+
     <title>Display-None index</title>
   </head>
   <body
@@ -35,42 +36,43 @@
       <nav class="navbar fixed-top navbar-expand-md bg-black">
         <a
           href="/index.html#page1"
-          class="navbar__dnoneLink text-decoration-none text-white d-flex flex-wrap justify-content-center">
+          class="navbar__dnoneLink text-decoration-none text-white d-flex flex-wrap justify-content-center ms-1">
           <img
             src="../assets/img/logoDnone3.jpg"
             alt="Logo"
             width="50"
             height="50"
-            class="logo d-inline-block align-text-center" />
+            class="d-inline-block align-text-center" />
           <p class="d-inline align-self-center m-0 pe-1">DISPLAY-NONE</p>
         </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler navbar-dark me-3 border-warning-subtle"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
           aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <span class="navbar-toggler-icon text-warning"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            class="navbar-nav me-auto mb-3 mb-md-0 flex-row justify-content-between">
+            class="navbar-nav me-auto my-4 my-md-0 mb-md-0 flex-row justify-content-around">
             <li class="nav-item dropdown d-inline-block">
               <a
-                class="nav-lin dropdown-toggler bn31 ms-md-5 mx-1"
+                class="nav-lin dropdown-toggler bn31 mx-1 mx-lg-5"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false">
                 <span class="bn31span">Categorías</span>
               </a>
-              <ul class="dropdown-menu bg-dark position-absolute z-4 ms-md-5">
+              <ul
+                class="dropdown-menu bg-dark position-absolute z-4 ms-md-5 text-uppercase">
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="./pages/categoriesTerror.html">
                     Terror
                   </a>
                 </li>
@@ -78,7 +80,7 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="./pages/categoriesDrama.html">
                     Drama
                   </a>
                 </li>
@@ -86,7 +88,7 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="./pages/categoriesComedia.html">
                     Comedia
                   </a>
                 </li>
@@ -94,31 +96,31 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
-                    Romances
+                    href="./pages/categoriesAccion.html">
+                    Acción
                   </a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
-                    Infantil
+                    href="./pages/categoriesCienciaFiccion.html">
+                    Ciencia Ficción
                   </a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
-                    Telenovelas
+                    href="/pages/404.html">
+                    Aventura
                   </a>
                 </li>
                 <li><hr class="dropdown-divider" /></li>
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="/pages/404.html">
                     Musicales
                   </a>
                 </li>
@@ -126,7 +128,7 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="/pages/404.html">
                     Documentales
                   </a>
                 </li>
@@ -134,7 +136,7 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="/pages/404.html">
                     Halloween
                   </a>
                 </li>
@@ -142,43 +144,68 @@
                 <li>
                   <a
                     class="dropdown-item text-decoration-none text-warning"
-                    href="">
+                    href="/pages/404.html">
                     Animé
                   </a>
                 </li>
               </ul>
             </li>
+
             <button
               type="button"
-              class="btn text-white d-flex d-inline-block d-md-none px-0">
-              <a
-                href="../pages/login.html"
-                class="text-decoration-none text-warning fs-4 btn-outline-white">
+              class="btn text-white d-flex d-inline-block d-md-none m-0 p-0">
+              <a href="../pages/login.html" class="text-warning fs-1">
                 <i class="bi bi-person-badge"></i>
               </a>
             </button>
+
             <li class="nav-item d-inline-block">
               <a class="bn31 ms-1 me-2" href="/pages/suscripción.html">
-                <span class="bn31span">Suscribite</span>
+                <span class="bn31span">Suscríbete</span>
               </a>
             </li>
           </ul>
-          <form class="d-flex d-inline-block h-25" role="search">
+
+          <form
+            class="d-flex d-inline-block d-md-none mx-4 my-5 my-md-0 me-3"
+            role="search">
             <input
-              class="form-control me-1 bg-dark text-warning border-dark"
+              class="form-control navbar__formControl border-dark"
               type="search"
-              placeholder="Buscar"
-              aria-label="Search" />
+              placeholder="Busque aquí su película o serie..."
+              aria-label="Busque aquí su película o serie"
+              maxlength="45"
+              minlength="2" />
             <button class="btn text-warning fs-4" type="submit">
               <i class="bi bi-search"></i>
             </button>
           </form>
+
+          <form
+            class="d-flex d-none d-md-inline-block mx-4 my-5 my-md-0 me-3"
+            role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control navbar__formControl border-1 border-dark text-warning"
+                placeholder="Busque aquí su película o serie..."
+                aria-label="Busque aquí su película o serie"
+                aria-describedby="button-addon2"
+                maxlength="45"
+                minlength="2" />
+              <button
+                class="btn btn-outline-dark text-warning"
+                type="button"
+                id="button-addon2">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+
           <button
             type="button"
-            class="btn text-white d-flex d-inline-block d-none d-md-inline-block">
-            <a
-              href="../pages/login.html"
-              class="text-decoration-none text-warning fs-4 btn-outline-white">
+            class="btn text-white d-flex d-none d-md-inline-block m-0 p-0 me-md-4 ms-md-2">
+            <a href="../pages/login.html" class="text-warning fs-2">
               <i class="bi bi-person-badge"></i>
             </a>
           </button>
@@ -196,6 +223,61 @@
           rgb(11, 171, 196, 0.8) 100%
         );
       ">
+      <!-- Aquí empieza portada -->
+      <section class="fondo">
+        <img
+          id="fondo-img"
+          src="./assets/img/Bannerhome1.webp"
+          class="img-fluid"
+          style="object-fit: contain"
+          alt="Banner Fondo Principal" />
+      </section>
+      <!-- Aquí termina portada -->
+      <h2
+        class="text-warning m-3 display-3 ps-4 border-start border-2 border-warning">
+        TOP 5
+      </h2>
+      <!-- Zona Carrusel -->
+      <section id="homecarrusel" class="container-fluid">
+        <div
+          id="carouselExampleSlidesOnly"
+          class="carousel slide"
+          data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img
+                src="./assets/img/top1banner.webp"
+                class="d-block w-100 active img-fluid"
+                alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/top2banner.webp"
+                class="d-block w-100 img-fluid"
+                alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/top3banner.webp"
+                class="d-block w-100 img-fluid"
+                alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/top4banner.webp"
+                class="d-block w-100 img-fluid"
+                alt="..." />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="./assets/img/top5banner.webp"
+                class="d-block w-100 img-fluid"
+                alt="..." />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- hasta aqui Carrusel -->
       <!-- Desde aquí section 1 -->
       <section class="container-fluid mt-5">
         <!-- Desde aquí Bienvenida -->
@@ -206,14 +288,7 @@
             <div class="ring"></div>
             <div class="ring"></div>
             <a href="#home" class="logo">
-              <img
-                src="./assets/img/logo.png"
-                alt="logo"
-                style="
-                  border-top-right-radius: 40%;
-                  border-bottom-right-radius: 40%;
-                  border-top-left-radius: 10px;
-                " />
+              <img src="./assets/img/logo.png" alt="logo" />
             </a>
           </div>
         </div>
@@ -231,11 +306,12 @@
           <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl">
             <div class="card text-center h-100 bg-black">
               <img
-                src="./assets/img/Accion/Johnny & Clyde.webp"
+                src="./assets/img/Accion/Johnny_Clyde.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
-                <h5 class="card-title bg-transparent fs-5 text-uppercase">
+                alt="Johnny & Clyde" />
+              <div class="card-body card__backEffect">
+                <h5
+                  class="card-title bg-transparent text-warning fw-bold ms-0 fs-5 text-uppercase">
                   Johnny Y Clyde
                 </h5>
                 <h6
@@ -246,7 +322,7 @@
                   del crimen Alana y custodiado por un asesino demoníaco que
                   ella manda.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -255,10 +331,10 @@
               <img
                 src="./assets/img/Accion/Headlock.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Headlock" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title font-color bg-transparent text-warning fw-bold ms-0 fs-5 text-uppercase">
                   Headlock
                 </h5>
                 <h6
@@ -268,7 +344,7 @@
                   determina para averiguar qué sucedió, una verdad que el
                   Director de la CIA quiere ocultar a toda costa.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -277,10 +353,10 @@
               <img
                 src="./assets/img/Accion/La Libreta Negra.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="La libreta Negra" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title font-color text-warning fw-bold ms-0 bg-transparent fs-5 text-uppercase">
                   La Libreta Negra
                 </h5>
                 <h6
@@ -289,19 +365,19 @@
                   enfrentarse a unos policías corruptos para limpiar el nombre
                   de su hijo, injustamente acusado de secuestro.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
           <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl">
-            <div class="card text-center h-100 bg-black orange-border">
+            <div class="card text-center h-100 bg-black">
               <img
                 src="./assets/img/Accion/La Rebelión.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="La Rebelion" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title bg-transparent text-warning fw-bolder ms-0 fs-5 text-uppercase">
                   La Rebelion
                 </h5>
                 <h6
@@ -313,7 +389,7 @@
                   planeta a los humanos. Hoy, un grupo de rebeldes intentará
                   comenzar a recuperarlo.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -322,10 +398,10 @@
               <img
                 src="./assets/img/Accion/Rápidos y furiosos 8.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="RapidosYFuriosos8" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Rapidos y Furiosos 8
                 </h5>
                 <h6
@@ -338,20 +414,24 @@
                   rechazar la oportunidad, traicionando así a todo el mundo
                   cercano a él.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a
+                  href="./pages/RapidosYFuriosos8.html"
+                  class="btn btn-outline-warning">
+                  Ver Pelicula
+                </a>
               </div>
             </div>
           </div>
           <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl">
-            <div class="card text-center h-100 bg-black orange-border">
+            <div class="card text-center h-100 bg-black">
               <img
                 src="./assets/img/Drama/Cassandro.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Cassandro" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
-                  IT
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
+                  Cassandro
                 </h5>
                 <h6
                   class="card-sub-title bg-transparent text-white description">
@@ -361,7 +441,7 @@
                   sólo trastoca el mundo de la lucha machista sino también su
                   propia vida.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -370,10 +450,10 @@
               <img
                 src="./assets/img/Drama/Ehrengard - El arte de la seducción.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="El arte de la seduccion" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   El arte de la seduccion
                 </h5>
                 <h6
@@ -382,7 +462,7 @@
                   romance inesperado cuando lo designan para enseñarle
                   estrategias de seducción al tímido hijo de la gran duquesa.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -391,10 +471,10 @@
               <img
                 src="./assets/img/Drama/Entre la razón y la locura.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Entre la Razon..." />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Entre la Razon y la Locura
                 </h5>
                 <h6
@@ -406,7 +486,7 @@
                   a problemas legales debió aparecer su crédito como P.B.
                   Shemran.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -415,10 +495,10 @@
               <img
                 src="./assets/img/Drama/Las buenas compañías.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Las Buenas Compañías" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   las Buenas Compañías
                 </h5>
                 <h6
@@ -435,7 +515,7 @@
                   verano en una etapa que marcará un antes y un después en su
                   vida.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -444,10 +524,10 @@
               <img
                 src="./assets/img/Drama/Vita y Virginia.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Vita y Virginia" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Vita y Virginia
                 </h5>
                 <h6
@@ -457,19 +537,19 @@
                   agónica aventura amorosa que determina para siempre sus vidas
                   y su trabajo.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
           <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl">
-            <div class="card text-center h-100 bg-black orange-border">
+            <div class="card text-center h-100 bg-black">
               <img
                 src="./assets/img/Ciencia Ficción/Nadie podrá salvarte.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Nadie Podra Salvarte" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Nadie podrá salvarte
                 </h5>
                 <h6
@@ -478,19 +558,19 @@
                   un enfrentamiento contra una multitud de seres extraterrestres
                   que amenazan su futuro y la obligan a lidiar con su pasado.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
           <div class="col-10 col-sm-6 col-md-4 col-lg-3 col-xl">
-            <div class="card text-center h-100 bg-black orange-border">
+            <div class="card text-center h-100 bg-black">
               <img
                 src="./assets/img/Ciencia Ficción/Hipnosis - Arma Invisible.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Hipnosis" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Arma invisible
                 </h5>
                 <h6
@@ -500,7 +580,7 @@
                   gobierno mientras investiga una serie de atracos de alto
                   nivel.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -509,10 +589,10 @@
               <img
                 src="./assets/img/Ciencia Ficción/La Huésped.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="La Huesped" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   La Huesped
                 </h5>
                 <h6
@@ -531,7 +611,7 @@
                   novela de Stephenie Meyer, autora de la saga de "Crepúsculo"
                   -Twilight-
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -540,10 +620,10 @@
               <img
                 src="./assets/img/Ciencia Ficción/Axcellerator.webp"
                 class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                alt="Axcellerator" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Axcellerator
                 </h5>
                 <h6
@@ -554,7 +634,7 @@
                   hará que él y una vendedora llamada Kate vivan la aventura de
                   su vida.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
@@ -562,11 +642,11 @@
             <div class="card text-center h-100 bg-black">
               <img
                 src="./assets/img/Ciencia Ficción/Ad Astra - Hacia las estrellas.webp"
-                class="card-img"
-                alt="IT" />
-              <div class="card-body">
+                x
+                alt="Ad- Astra" />
+              <div class="card-body card__backEffect">
                 <h5
-                  class="card-title font-color bg-transparent fs-5 text-uppercase">
+                  class="card-title text-warning fw-bolder ms-0 fs-5 bg-transparent fs-5 text-uppercase">
                   Ad Astra: Hacia las estrellas
                 </h5>
                 <h6
@@ -580,68 +660,285 @@
                   una expedición perdida que décadas antes afrontó audazmente el
                   vacío y el silencio en busca de lo desconocido.
                 </h6>
-                <a href="#" class="btn btn-outline-dark">Ver Pelicula</a>
+                <a href="#" class="btn btn-outline-warning">Ver Pelicula</a>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section
-        class="container text-center pt-4 pb-4 border-3 border-bottom border-danger-subtle">
+      <section class="container text-center pt-4 pb-4">
         <div class="row justify-content-center">
           <div class="col">
-            <a
-              href=""
-              class="disabled btn btn-outline-secondary rounded-circle">
+            <a href="" class="disabled btn btn-outline-warning rounded-circle">
               <i class="bi bi-arrow-left"></i>
             </a>
             <a
               href="#page1"
-              class="btn btn-outline-secondary rounded-circle active">
+              class="btn btn-outline-warning rounded-circle active">
               1
             </a>
             <a
               href="/pages/indexPage2.html"
-              class="btn btn-outline-danger rounded-circle">
+              class="btn btn-outline-warning rounded-circle">
               2
             </a>
             <a
               href="/pages/indexPage3.html"
-              class="btn btn-outline-secondary rounded-circle">
+              class="btn btn-outline-warning rounded-circle">
               3
             </a>
             <a
               href="/pages/indexPage4.html"
-              class="btn btn-outline-secondary rounded-circle">
+              class="btn btn-outline-warning rounded-circle">
               4
             </a>
             <a
               href="/pages/indexPage5.html"
-              class="btn btn-outline-secondary rounded-circle">
+              class="btn btn-outline-warning rounded-circle">
               5
             </a>
             <a
               href="/pages/indexPage2.html"
-              class="btn btn-outline-secondary rounded-circle">
+              class="btn btn-outline-warning rounded-circle">
               <i class="bi bi-arrow-right bg-transparent"></i>
             </a>
           </div>
         </div>
       </section>
       <!-- Hasta aquí section 1 -->
+
+      <!-- Desde aqui section 2 -->
+      <section
+        class="cards mt-4 mb-4 bg-transparent container-fluid flex-wrap flex-md-nowrap">
+        <div class="card card__promocional bg-transparent border-0">
+          <div class="content">
+            <button class="button" data-text="Awesome">
+              <span class="actual-text fs-1">&nbsp;PREMIUM&nbsp;</span>
+              <span aria-hidden="true" class="hover-text">
+                &nbsp;PREMIUM&nbsp;
+              </span>
+            </button>
+            <ul>
+              <li>Prueba gratuita por 30 días</li>
+              <li>Sin anuncios</li>
+              <li>Todos los medios de pago</li>
+            </ul>
+            <div>
+              <a href="./pages/suscripción.html">
+                <button id="botonSuscripcion">Suscríbete</button>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card__promocional bg-transparent border-0">
+          <div class="content">
+            <button class="button" data-text="Awesome">
+              <span class="actual-text fs-1">&nbsp;DISPLAY-NONE&nbsp;</span>
+              <span aria-hidden="true" class="hover-text">
+                &nbsp;DISPLAY-NONE&nbsp;
+              </span>
+            </button>
+            <ul>
+              <li>Donamos el 20% de tu cuota</li>
+              <li>Ayudamos a preservar el medio ambiente</li>
+              <li>Servicio Recargable</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- Hasta Aqui Section 2 -->
+
+      <!-- Desde Aqui section 3 -->
+      <section class="container-fluid conteiner mb-4">
+        <a
+          href="./pages/categoriesAccion.html"
+          class="text-decoration-none d-flex align-items-center boton__categorias m-2">
+          <h3 class="text-warning text-uppercase d-flex">
+            peliculas de accion
+          </h3>
+          <h6
+            class="d-flex boton__categorias-mostrar text-white ms-2 pt-0 ps-2 pb-1 pe-2 border-1 rounded mt-1">
+            ver mas
+          </h6>
+        </a>
+        <div class="container-fluid container-peliculas">
+          <div class="row peliculas-accion h-100">
+            <img
+              src="./assets/img/accion1.jpg"
+              alt=""
+              class="d-none col-lg-2 d-lg-flex offset-lg-1" />
+            <img
+              src="./assets/img/pelis de accion 2.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/pelis de accion 3.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/accion4.jpg"
+              alt=""
+              class="col-lg-2 d-none col-sm-4 d-sm-flex col-md-3" />
+            <img
+              src="./assets/img/accion5.jpg"
+              alt=""
+              class="col-lg-2 d-none col-md-3 d-md-flex" />
+          </div>
+        </div>
+        <a
+          href="./pages/categoriesComedia.html"
+          class="text-decoration-none d-flex align-items-center boton__categorias m-2">
+          <h3 class="text-warning text-uppercase d-flex">
+            peliculas de Comedia
+          </h3>
+          <h6
+            class="d-flex boton__categorias-mostrar text-white ms-2 pt-0 ps-2 pb-1 pe-2 border-1 rounded mt-1">
+            ver mas
+          </h6>
+        </a>
+        <div class="container-fluid container-peliculas">
+          <div class="peliculas-infantiles row h-100">
+            <img
+              src="./assets/img/infantiles1.jpeg.jpg"
+              alt=""
+              class="d-none col-lg-2 d-lg-flex offset-lg-1" />
+            <img
+              src="./assets/img/infantiles2.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/infantiles3.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/infantiles4.jpeg (1).jpg"
+              alt=""
+              class="col-lg-2 d-none col-sm-4 d-sm-flex col-md-3" />
+            <img
+              src="./assets/img/infantiles5.jpeg (1).jpg"
+              alt=""
+              class="col-lg-2 d-none col-md-3 d-md-flex" />
+          </div>
+        </div>
+        <a
+          href="./pages/categoriesTerror.html"
+          class="text-decoration-none d-flex align-items-center boton__categorias m-2">
+          <h3 class="text-warning text-uppercase d-flex">
+            peliculas de terror
+          </h3>
+          <h6
+            class="d-flex boton__categorias-mostrar text-white ms-2 pt-0 ps-2 pb-1 pe-2 border-1 rounded mt-1">
+            ver mas
+          </h6>
+        </a>
+        <div class="container-peliculas">
+          <div class="peliculas-terror row h-100">
+            <img
+              src="./assets/img/img terror1.jpg"
+              alt=""
+              class="d-none col-lg-2 d-lg-flex offset-lg-1" />
+            <img
+              src="./assets/img/img terror 2.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/img terror 3.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/img terror 4.jpg"
+              alt=""
+              class="col-lg-2 d-none col-sm-4 d-sm-flex col-md-3" />
+            <img
+              src="./assets/img/img terror5.jpg"
+              alt=""
+              class="col-lg-2 d-none col-md-3 d-md-flex" />
+          </div>
+        </div>
+        <a
+          href="./pages/categoriesCienciaFiccion.html"
+          class="text-decoration-none d-flex align-items-center boton__categorias m-2">
+          <h3 class="text-warning text-uppercase d-flex">
+            peliculas de ciencia Ficcion
+          </h3>
+          <h6
+            class="d-flex boton__categorias-mostrar text-white ms-2 pt-0 ps-2 pb-1 pe-2 border-1 rounded mt-1">
+            ver mas
+          </h6>
+        </a>
+        <div class="container-peliculas">
+          <div class="peliculas-ficcion row h-100">
+            <img
+              src="./assets/img/ficcion1.jpeg.jpg"
+              alt=""
+              class="d-none col-lg-2 d-lg-flex offset-lg-1" />
+            <img
+              src="./assets/img/ficcion2.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/ficcion3.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/ficcion4.jpeg (1).jpg"
+              alt=""
+              class="col-lg-2 d-none col-sm-4 d-sm-flex col-md-3" />
+            <img
+              src="./assets/img/ficcion5.jpeg (1).jpg"
+              alt=""
+              class="col-lg-2 d-none col-md-3 d-md-flex" />
+          </div>
+        </div>
+        <a
+          href="./pages/categoriesDrama.html"
+          class="text-decoration-none d-flex align-items-center boton__categorias m-2">
+          <h3 class="text-warning text-uppercase d-flex">peliculas de drama</h3>
+          <h6
+            class="d-flex boton__categorias-mostrar text-white ms-2 pt-0 ps-2 pb-1 pe-2 border-1 rounded mt-1">
+            ver mas
+          </h6>
+        </a>
+        <div class="container-peliculas">
+          <div class="peliculas-comedia row h-100">
+            <img
+              src="./assets/img/comedia1.jpg"
+              alt=""
+              class="d-none col-lg-2 d-lg-flex offset-lg-1" />
+            <img
+              src="./assets/img/comedia2.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/comedia3.jpeg.jpg"
+              alt=""
+              class="col-6 col-sm-4 col-md-3 col-lg-2" />
+            <img
+              src="./assets/img/comedia4.jpeg (1).jpg"
+              alt=""
+              class="col-lg-2 d-none col-sm-4 d-sm-flex col-md-3" />
+            <img
+              src="./assets/img/comedia5.jpg"
+              alt=""
+              class="col-lg-2 d-none col-md-3 d-md-flex" />
+          </div>
+        </div>
+      </section>
+      <!-- Hasta aqui section 3 -->
     </main>
 
     <!-- Desde aquí el footer -->
     <footer class="footer container-fluid">
       <div
-        class="footer__homeLink position-absolute end-0 pe-4 translate-middle-y pb-5">
+        class="footer__homeLink position-absolute end-0 pe-4 translate-middle-y">
         <a href="#page1">
           <button class="Btn">
             <svg height="1.6em" class="arrow" viewBox="0 0 512 512">
               <path
                 d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
             </svg>
-            <p class="text text-secondary">Volver arriba</p>
+            <p class="textBtn text-secondary">Volver arriba</p>
           </button>
         </a>
       </div>
@@ -681,7 +978,7 @@
           <div class="mb-3">
             <a
               class="footer__link text-secondary text-decoration-none"
-              href="./pages/404.html">
+              href="/pages/contact.html">
               Contáctanos
             </a>
           </div>

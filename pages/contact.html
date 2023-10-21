@@ -5,12 +5,197 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>pagina de contacto</title>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contactStyle.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
 </head>
 
 <body>
+    <header class="pb-5">
+        <!-- Desde aquí el navbar -->
+      <nav class="navbar fixed-top navbar-expand-md bg-black">
+        <a
+          href="/index.html#page1"
+          class="navbar__dnoneLink text-decoration-none text-white d-flex flex-wrap justify-content-center ms-1">
+          <img
+            src="../assets/img/logoDnone3.jpg"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-center" />
+          <p class="d-inline align-self-center m-0 pe-1">DISPLAY-NONE</p>
+        </a>
+        <button
+          class="navbar-toggler navbar-dark me-3 border-warning-subtle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-warning"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto my-4 my-md-0 mb-md-0 flex-row justify-content-around">
+            <li class="nav-item dropdown d-inline-block">
+              <a
+                class="nav-lin dropdown-toggler bn31 mx-1 mx-lg-5"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="bn31span">Categorías</span>
+              </a>
+              <ul
+                class="dropdown-menu bg-dark position-absolute z-4 ms-md-5 text-uppercase">
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="./pages/categoriesTerror.html">
+                    Terror
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="./pages/categoriesDrama.html">
+                    Drama
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="./pages/categoriesComedia.html">
+                    Comedia
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="./pages/categoriesAccion.html">
+                    Acción
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="./pages/categoriesCienciaFiccion.html">
+                    Ciencia Ficción
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="/pages/404.html">
+                    Aventura
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="/pages/404.html">
+                    Musicales
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="/pages/404.html">
+                    Documentales
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="/pages/404.html">
+                    Halloween
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning"
+                    href="/pages/404.html">
+                    Animé
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <button
+              type="button"
+              class="btn text-white d-flex d-inline-block d-md-none m-0 p-0">
+              <a href="../pages/login.html" class="text-warning fs-1">
+                <i class="bi bi-person-badge"></i>
+              </a>
+            </button>
+
+            <li class="nav-item d-inline-block">
+              <a class="bn31 ms-1 me-2" href="/pages/suscripción.html">
+                <span class="bn31span">Suscríbete</span>
+              </a>
+            </li>
+          </ul>
+
+          <form
+            class="d-flex d-inline-block d-md-none mx-4 my-5 my-md-0 me-3"
+            role="search">
+            <input
+              class="form-control navbar__formControl border-dark"
+              type="search"
+              placeholder="Busque aquí su película o serie..."
+              aria-label="Busque aquí su película o serie"
+              maxlength="45"
+              minlength="2" />
+            <button class="btn text-warning fs-4" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <form
+            class="d-flex d-none d-md-inline-block mx-4 my-5 my-md-0 me-3"
+            role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control navbar__formControl border-1 border-dark text-warning"
+                placeholder="Busque aquí su película o serie..."
+                aria-label="Busque aquí su película o serie"
+                aria-describedby="button-addon2"
+                maxlength="45"
+                minlength="2" />
+              <button
+                class="btn btn-outline-dark text-warning"
+                type="button"
+                id="button-addon2">
+                <i class="bi bi-search"></i>
+              </button>
+            </div>
+          </form>
+
+          <button
+            type="button"
+            class="btn text-white d-flex d-none d-md-inline-block m-0 p-0 me-md-4 ms-md-2">
+            <a href="../pages/login.html" class="text-warning fs-2">
+              <i class="bi bi-person-badge"></i>
+            </a>
+          </button>
+        </div>
+      </nav>
+      <!-- Hasta aquí el navbar -->
+      </header>
 
     <div class="text-bg p-3">
 
