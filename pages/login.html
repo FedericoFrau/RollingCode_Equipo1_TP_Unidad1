@@ -1,230 +1,594 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/styleLogin.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/login.css" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
-    <title>Login D-None</title>
-</head>
-<body >
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes=""
+      href="../assets/favicon/favicon-96x96.png" />
+    <title>ACCESO - DISPLAY-NONE</title>
+  </head>
+  <body id="page1">
     <header class="pb-5">
-        <!-- Desde aquí el navbar -->
-        <nav class="navbar fixed-top navbar-expand-md bg-black">
-          <a
-            href="/index.html#page1"
-            class="navbar__dnoneLink text-decoration-none text-white d-flex flex-wrap justify-content-center">
-            <img
-              src="../assets/img/logoDnone3.jpg"
-              alt="Logo"
-              width="50"
-              height="50"
-              class="logo d-inline-block align-text-center" />
-            <p class="d-inline align-self-center m-0 pe-1">DISPLAY-NONE</p>
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul
-              class="navbar-nav me-auto mb-3 mb-md-0 flex-row justify-content-between">
-              <li class="nav-item dropdown d-inline-block">
-                <a
-                  class="nav-lin dropdown-toggler bn31 ms-md-5 mx-1"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  <span class="bn31span">Categorías</span>
-                </a>
-                <ul class="dropdown-menu bg-dark position-absolute z-4 ms-md-5">
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesTerror.html">
-                      Terror
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesDrama.html">
-                      Drama
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesComedia.html">
-                      Comedia
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesAccion.html">
-                      Accion
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesComedia.html">
-                      Infantil
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="./pages/categoriesCienciaFiccion.html">
-                      Ciencia Ficcion
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="">
-                      Musicales
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="">
-                      Documentales
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="">
-                      Halloween
-                    </a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a
-                      class="dropdown-item text-decoration-none text-warning"
-                      href="">
-                      Animé
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <button
-                type="button"
-                class="btn text-white d-flex d-inline-block d-md-none px-0">
-                <a
-                  href="../pages/login.html"
-                  class="text-decoration-none text-warning fs-4 btn-outline-white">
-                  <i class="bi bi-person-badge"></i>
-                </a>
-              </button>
-              <li class="nav-item d-inline-block">
-                <a class="bn31 ms-1 me-2" href="/pages/suscripción.html">
-                  <span class="bn31span">Suscribite</span>
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex d-inline-block h-25" role="search">
-              <input
-                class="form-control me-1 bg-dark text-warning border-dark"
-                type="search"
-                placeholder="Buscar"
-                aria-label="Search" />
-              <button class="btn text-warning fs-4" type="submit">
-                <i class="bi bi-search"></i>
-              </button>
-            </form>
+      <!-- Desde aquí el navbar -->
+      <nav class="navbar fixed-top navbar-expand-md bg-black">
+        <a
+          href="../index.html#page1"
+          class="navbar__dnoneLink text-decoration-none text-white d-flex flex-wrap justify-content-center ms-1">
+          <img
+            src="../assets/img/logoDnone3.jpg"
+            alt="Logo"
+            width="50"
+            height="50"
+            class="d-inline-block align-text-center" />
+          <p class="d-inline align-self-center m-0 pe-1 fw-semibold">
+            DISPLAY-NONE
+          </p>
+        </a>
+        <button
+          class="navbar-toggler navbar-dark me-3 border-warning-subtle"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon text-warning"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul
+            class="navbar-nav me-auto my-4 my-md-0 mb-md-0 flex-row justify-content-around">
+            <li class="nav-item dropdown d-inline-block">
+              <a
+                class="dropdown-toggler bn31 mx-1 mx-lg-5"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <span class="bn31span">Categorías</span>
+              </a>
+              <ul
+                class="navbar__Categorías dropdown-menu bg-dark position-absolute z-4 ms-lg-5 text-uppercase">
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/categoriesTerror.html">
+                    Terror
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/categoriesDrama.html">
+                    Drama
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/categoriesComedia.html">
+                    Comedia
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/categoriesAccion.html">
+                    Acción
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/categoriesCienciaFiccion.html">
+                    Ciencia Ficción
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/404.html">
+                    Aventura
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/404.html">
+                    Musicales
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/404.html">
+                    Documentales
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/404.html">
+                    Halloween
+                  </a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a
+                    class="dropdown-item text-decoration-none text-warning fw-semibold"
+                    href="../pages/404.html">
+                    Animé
+                  </a>
+                </li>
+              </ul>
+            </li>
+
             <button
               type="button"
-              class="btn text-white d-flex d-inline-block d-none d-md-inline-block">
-              <a
-                href="../pages/login.html"
-                class="text-decoration-none text-warning fs-4 btn-outline-white">
+              class="btn text-white d-flex d-inline-block d-md-none m-0 p-0">
+              <a href="../pages/login.html" class="text-warning fs-1">
                 <i class="bi bi-person-badge"></i>
               </a>
             </button>
-          </div>
-        </nav>
-        <!-- Hasta aquí el navbar -->
-      </header>
-    <main class="bg-dark d-flex justify-content-center align-items-center vh-100">
-     <div class="card11 bg-white p-5 rounded-5 text-secondary shadow" style="width: 25rem;">
-       
-        <div>
-            <div class="d-flex justify-content-center">
-                <img src="https://static.vecteezy.com/system/resources/previews/007/407/996/non_2x/user-icon-person-icon-client-symbol-login-head-sign-icon-design-vector.jpg" alt="iconoInicioSesión" style="height: 7rem;">
-            </div>
-            <div class="text-center fs-1 fw-bold">
-        
-                    Inicia sesión
-                
-                
-            </div>
-            <div class="input-group mt-3">
-                <div class="input-group-text bg-light"><img src="https://cdn-icons-png.flaticon.com/512/17/17004.png" alt="iconoUsuario" style="height: 1rem ;"></div>
-                
-                <form action="">
-                <input class="form-control" type="email" placeholder="Usuario" maxlength="30"
-                minlength="15" pattern="[a-zA-Z0-9._%$+-]+@[a-zA-z0-9.-]\.[a-zA-Z]{2,4}" required >
-                </form>
-            </div> 
 
-           
-        </div>
-        <div class="input-group mt-2">
-            <div class=" input-group-text bg-light">
-                <img src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png" alt="iconoContraseña" style="height: 1rem;">
+            <li class="nav-item d-inline-block">
+              <a class="bn31 ms-1 me-2" href="../pages/suscripción.html">
+                <span class="bn31span">Suscríbete</span>
+              </a>
+            </li>
+          </ul>
+
+          <form
+            class="d-flex d-inline-block d-md-none mx-4 my-5 my-md-0 me-3"
+            role="search">
+            <input
+              class="form-control navbar__formControl border-dark"
+              type="search"
+              placeholder="Busque aquí..."
+              aria-label="Busque aquí"
+              maxlength="45"
+              minlength="2" />
+            <button class="btn text-warning fs-4" type="submit">
+              <i class="bi bi-search"></i>
+            </button>
+          </form>
+
+          <form
+            class="d-flex d-none d-md-inline-block mx-4 my-5 my-md-0 me-3"
+            role="search">
+            <div class="input-group">
+              <input
+                type="search"
+                class="form-control navbar__formControl border-1 border-dark text-warning"
+                placeholder="Busque aquí..."
+                aria-label="Busque aquí"
+                aria-describedby="button-addon2"
+                maxlength="45"
+                minlength="2" />
+              <a href="../pages/404.html">
+                <button
+                  class="btn btn-outline-dark text-warning"
+                  type="button"
+                  id="button-addon2">
+                  <i class="bi bi-search"></i>
+                </button>
+              </a>
             </div>
-            <form action="">
-        
-            <input class="form-control"  type="password" placeholder="Contraseña" maxlength="12" minlength="4"
-            pattern="[a-zA-Z0-9.-+_%$]" required>
-        </form>
+          </form>
+          <button
+            type="button"
+            class="btn text-white d-flex d-none d-md-inline-block m-0 p-0 me-md-4 ms-md-2">
+            <a href="../pages/login.html" class="text-warning fs-2">
+              <i class="bi bi-person-badge"></i>
+            </a>
+          </button>
+        </div>
+      </nav>
+      <!-- Hasta aquí el navbar -->
+    </header>
+    <main class="d-flex justify-content-center align-items-center vh-100">
+      <div
+        class="card11 px-2 px-sm-4 rounded-5 text-secondary shadow"
+        style="width: 30rem">
+        <div>
+          <div class="d-flex justify-content-center">
+            <img
+              src="../assets/iconos/usuarioLogo1 (1).png"
+              alt="iconoInicioSesión"
+              style="height: 7rem" />
+          </div>
+          <div class="text-center fs-1 fw-bold text-black text__shadow">
+            Inicia sesión
+          </div>
+          <form action="">
+            <div class="input-group mt-3">
+              <div class="input-group-text bg-light">
+                <img
+                  src="https://cdn-icons-png.flaticon.com/512/17/17004.png"
+                  alt="iconoUsuario"
+                  style="height: 1rem" />
+              </div>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                pattern=" [a-zA-Z0-9._+-%]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                placeholder="escribe tu email"
+                maxlength="40"
+                minlength="5"
+                required />
+            </div>
+            <div class="input-group mt-2">
+              <div class="input-group-text bg-light">
+                <img
+                  src="https://w7.pngwing.com/pngs/778/12/png-transparent-computer-icons-skype-icon-design-change-password-logo-internet-share-icon.png"
+                  alt="iconoContraseña"
+                  style="height: 1rem" />
+              </div>
+              <input
+                type="password"
+                class="form-control"
+                id="password"
+                pattern="[a-zA-Z0-9.-$%]"
+                minlength="5"
+                maxlength="14"
+                placeholder="escribe tu contraseña"
+                required />
+            </div>
+            <a href="../pages/404.html" class="text-decoration-none text-white">
+              <button
+                type="submit"
+                class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm">
+                Iniciar sesión
+              </button>
+            </a>
+          </form>
         </div>
         <div class="d-flex justify-content-around mt-2">
-            <div class="d-flex align-items-center gap-1">
-                <input class="form-check-input" type="checkbox">
-                <div class="pt-1" style="font-size: 0.9rem">Recuerdame</div>
+          <div class="d-flex align-items-center gap-1">
+            <input class="form-check-input" type="checkbox" />
+            <div class="pt-1 text-black" style="font-size: 0.9rem">
+              Recuerdame
             </div>
-            <div class="pt-1">
-                <a href="../src/img/error404.png" class="text-decoration-none text-dark fw-semibold fst-italic" style="font-size: 0.9rem;"><i>¿Olvidaste tu contraseña?</i></a>
-            </div>
+          </div>
+          <div class="pt-1">
+            <a
+              href="../pages/404.html"
+              class="text-decoration-none text-dark fw-semibold fst-italic"
+              style="font-size: 0.9rem">
+              <i>¿Olvidaste tu contraseña?</i>
+            </a>
+          </div>
         </div>
-        <div class="btn btn-dark text-white w-100 mt-4 fw-semibold shadow-sm" >
-        <a href="./404.html" class="text-decoration-none text-white"> Iniciar sesión</a></div>
+
         <div class="d-flex gap-1 justify-content-center mt-2">
-            <div>
-                ¿No posees cuenta?
-            </div>
-            <a href="./404.html" class="text-decoration-none text-dark fw-semibold "> Registrate</a>
+          <div>
+            <p class="text-black">¿No posees cuenta?</p>
+          </div>
+          <a
+            href="../pages/404.html"
+            class="text-decoration-none text-dark fw-bold text__shadow">
+            Registrate
+          </a>
         </div>
-        <div class="p-3">
-            <div class="border-bottom text-center" style="height: 0.9rem;"> 
-                <span class="bg-white px-2">O inicia </span> </div>
+
+        <div class="d-flex justify-content-center">
+          <div
+            class="btn gap-2 justify-content-center m-3 bg-white opacity-75 w-50 shadow-sm">
+            <img
+            src="https://e7.pngegg.com/pngimages/704/688/png-clipart-google-google.png"
+            alt="iconoGoogle" style="height: 1.6rem;" class=>
+            <a class="text-decoration-none text-black" href="../pages/404.html">
+              Continua con Google
+            </a>
+          </div>
         </div>
-        <div class="btn  d-flex gap-2 justify-content-center border mt-3 shadow-sm"><img src="https://e7.pngegg.com/pngimages/704/688/png-clipart-google-google.png" alt="iconoGoogle" style="height: 1.6rem;" class="mt-"><a class="text-decoration-none text-secondary" href="./404.html">Continua con Google</a>
-        </div>
-    </div>
+      </div>
     </main>
-</body>
+    <!-- Desde aquí el footer -->
+    <footer class="container-fluid">
+      <div
+        class="footer__homeLink position-absolute end-0 pe-4 translate-middle-y">
+        <a href="#page1">
+          <button class="Btn">
+            <svg height="1.6em" class="arrow" viewBox="0 0 512 512">
+              <path
+                d="M233.4 105.4c12.5-12.5 32.8-12.5 45.3 0l192 192c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L256 173.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l192-192z"></path>
+            </svg>
+            <p class="textBtn text-secondary">Volver arriba</p>
+          </button>
+        </a>
+      </div>
+
+      <section
+        class="row py-2 text-white text-center bg-dark"
+        style="
+          background: linear-gradient(
+            120deg,
+            rgba(4, 0, 255, 0) 30%,
+            rgb(11, 171, 196, 0.2) 100%
+          );
+        ">
+        <figure class="col-12 col-md-3 mt-2 mb-0 align-self-end">
+          <img
+            src="../assets/logos/BackgroundEraser_20231006_113847678.png"
+            alt="Logo de la marca"
+            width="250"
+            height="250"
+            class="footer__logoImage" />
+          <figcaption class="footer__logoName h3 mb-0">Display-None</figcaption>
+          <figcaption class="mt-2 mb-lg-0 fst-italic">
+            Todo lo que buscas en
+          </figcaption>
+          <figcaption class="fst-italic">peliculas, series y más</figcaption>
+        </figure>
+
+        <nav class="col-12 col-md-3">
+          <p class="h5 mb-4 mt-5">Links</p>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Acerca de Nosotros
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/contact.html">
+              Contáctanos
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Tutoriales
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Donar
+            </a>
+          </div>
+        </nav>
+
+        <nav class="col-12 col-md-3">
+          <p class="h5 mb-4 mt-5">Legales</p>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Términos & condiciones
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Políticas de privacidad
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              Ayuda
+            </a>
+          </div>
+          <div class="mb-3">
+            <a
+              class="footer__link text-secondary text-decoration-none"
+              href="../pages/404.html">
+              DMCA
+            </a>
+          </div>
+        </nav>
+
+        <nav class="col-12 col-md-3">
+          <!-- Desde aquí nav horizontal redes -->
+          <nav class="col-12 mt-5 mb-3 d-md-none">
+            <ul class="social">
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.facebook.com/"
+                  target="_blank">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://twitter.com/"
+                  target="_blank">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.google.com/account/about/?hl=es"
+                  target="_blank">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a
+                  class="social-link"
+                  href="https://www.instagram.com/"
+                  target="_blank">
+                  <svg
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                      fill="currentColor"></path>
+                    <path
+                      d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                      fill="currentColor"></path>
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                      fill="currentColor"></path>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Hasta aquí nav horizontal redes -->
+          <!-- Desde aquí nav vertical redes -->
+          <nav
+            class="social d-flex flex-column justify-content-around d-none d-md-flex mt-5">
+            <div class="social-item">
+              <a
+                class="social-link"
+                href="https://www.facebook.com/"
+                target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M9.19795 21.5H13.198V13.4901H16.8021L17.198 9.50977H13.198V7.5C13.198 6.94772 13.6457 6.5 14.198 6.5H17.198V2.5H14.198C11.4365 2.5 9.19795 4.73858 9.19795 7.5V9.50977H7.19795L6.80206 13.4901H9.19795V21.5Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="social-item">
+              <a
+                class="social-link"
+                href="https://twitter.com/"
+                target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M8 3C9.10457 3 10 3.89543 10 5V8H16C17.1046 8 18 8.89543 18 10C18 11.1046 17.1046 12 16 12H10V14C10 15.6569 11.3431 17 13 17H16C17.1046 17 18 17.8954 18 19C18 20.1046 17.1046 21 16 21H13C9.13401 21 6 17.866 6 14V5C6 3.89543 6.89543 3 8 3Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="social-item">
+              <a
+                class="social-link"
+                href="https://www.google.com/account/about/?hl=es"
+                target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M6 12C6 15.3137 8.68629 18 12 18C14.6124 18 16.8349 16.3304 17.6586 14H12V10H21.8047V14H21.8C20.8734 18.5645 16.8379 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C15.445 2 18.4831 3.742 20.2815 6.39318L17.0039 8.68815C15.9296 7.06812 14.0895 6 12 6C8.68629 6 6 8.68629 6 12Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+            <div class="social-item">
+              <a
+                class="social-link"
+                href="https://www.instagram.com/"
+                target="_blank">
+                <svg
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+                    fill="currentColor"></path>
+                  <path
+                    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+                    fill="currentColor"></path>
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+                    fill="currentColor"></path>
+                </svg>
+              </a>
+            </div>
+          </nav>
+          <!-- Hasta aquí nav vertical redes -->
+        </nav>
+
+        <div class="col-12 mt-4">
+          <p>© 2023 Display-None. Todos los derechos reservados.</p>
+        </div>
+      </section>
+    </footer>
+    <!-- Hasta aquí el footer -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </body>
 </html>
